@@ -1,0 +1,11 @@
+---
+version: '3.7'
+
+services:
+
+  minikube-demo_registry:
+    image: registry:latest
+    container_name: minikube-demo_registry
+    restart: unless-stopped
+    ports:
+      - 5000:5000
