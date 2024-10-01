@@ -13,7 +13,12 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 
 # Installing kvm hypervisor
 sudo apt -y install libvirt-daemon-system bridge-utils qemu-kvm libvirt-daemon
+sudo usermod -aG libvirt $(whoami)
+sudo usermod -aG kvm $(whoami)
 
 # Installing minikube itself
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 chmod +x minikube
+sudo mv ./minikube /usr/local/bin/minikube
+
+echo "Now log out and log back in"
