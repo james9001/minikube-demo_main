@@ -36,4 +36,6 @@ curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/miniku
 chmod +x minikube
 sudo mv ./minikube /usr/local/bin/minikube
 
-#echo "Now log out and log back in"
+sudo usermod -aG docker $USER && newgrp docker
+
+echo "Now log out and log back in"
