@@ -4,7 +4,7 @@ set -e
 #Installing some basics
 sudo apt-get -y update
 sudo apt-get -y upgrade
-sudo apt -y install nano git neofetch htop nvtop pip nfs-common ncdu dnsutils
+sudo apt -y install nano git neofetch htop nvtop pip nfs-common ncdu
 
 # Installing kubectl
 #curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
